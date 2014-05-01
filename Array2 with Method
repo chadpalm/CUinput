@@ -10,7 +10,7 @@ public class method1 {
 		System.out.println(myInput);
 				
 	}
-	public static ArrayList<Integer> input() {
+	public static ArrayList<Integer> input() { //This collect user CU and place in an ArrayList
 		ArrayList<Integer> cus = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
 
@@ -18,8 +18,10 @@ public class method1 {
 		while (input.hasNextInt()){
 
 			int value = input.nextInt();
+			
 			if (value < 0){
 				System.out.println("Error: must not be negative numbers: ");
+				break;
 			}
 			/*else if (value.equal("no"))
 			{
@@ -29,9 +31,7 @@ public class method1 {
 			{
 				System.out.println("Enter CU for a class: ");	
 			}
-				
-			cus.add(value);
-	
+			cus.add(value);	
 	}
 		return cus;
 

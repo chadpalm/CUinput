@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class method1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		ArrayList<Integer> myInput = input();
+		System.out.println(myInput);
+				
+	}
+	public static ArrayList<Integer> input() {
+		ArrayList<Integer> cus = new ArrayList<Integer>();
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter CU for a class: ");
+		while (input.hasNextInt()){
+
+			int value = input.nextInt();
+			if (value < 0){
+				System.out.println("Error: must not be negative numbers: ");
+			}
+			/*else if (value.equal("no"))
+			{
+				
+			}*/
+			else
+			{
+				System.out.println("Enter CU for a class: ");	
+			}
+				
+			cus.add(value);
+	
+	}
+		return cus;
+
+}
+}

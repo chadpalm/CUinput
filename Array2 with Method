@@ -5,8 +5,14 @@ public class method1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner keys = new Scanner(System.in);
 	
 		ArrayList<Integer> myInput = input();
+		System.out.println("Enter planned of units to complete per term: ");
+		int plan = keys.nextInt();
+		System.out.println(plan);
+		
+		
 		System.out.println(myInput);
 				
 	}
@@ -14,7 +20,7 @@ public class method1 {
 		ArrayList<Integer> cus = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Enter CU for a class: ");
+		System.out.println("Enter a CU for a class or type quit to exit: ");
 		while (input.hasNextInt()){
 
 			int value = input.nextInt();
@@ -29,11 +35,20 @@ public class method1 {
 			}*/
 			else
 			{
-				System.out.println("Enter CU for a class: ");	
+				System.out.println("Enter a CU for another class or type quit to exit: ");	
 			}
 			cus.add(value);	
 	}
 		return cus;
 
 }
+	public ArrayList<Integer> sum(ArrayList<Integer> sum)
+	{
+	int sum1 = 0;
+	for(int i = 0; i < sum1.size(); i++)
+	{
+		sum1 = sum1 + sum1.get(i);
+	}
+	}
 }
+

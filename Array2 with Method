@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * @author PalmquistC
+ *
+ */
 public class method1 {
 
 	public static void main(String[] args) {
@@ -16,6 +20,12 @@ public class method1 {
 		System.out.println(myInput);
 				
 	}
+
+	/**
+	 * This will prompt the user to input CUs into the ArrayList
+	 * and then return all of the Arrays. 
+	 * @return cus
+	 */
 	public static ArrayList<Integer> input() { //This collect user CU and place in an ArrayList
 		ArrayList<Integer> cus = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
@@ -42,6 +52,12 @@ public class method1 {
 		return cus;
 
 }
+	
+
+	/**This will total up the ArrayList
+	 * @param sum
+	 * @return
+	 */
 	public ArrayList<Integer> sum(ArrayList<Integer> sum)
 	{
 	int sum1 = 0;

@@ -12,12 +12,14 @@ public class arrayTest {
 		while (input.hasNextInt()){
 			
 			int value = input.nextInt();
+			
 			if (value < 0){
 				System.out.println("Error: must no negative numbers: ");
 				break;
 			}
 			cus.add(value);
 			System.out.println(cus);
+			System.out.println("Enter CU for another CU for a class (or enter exit): ");
 			
 		}
 }
